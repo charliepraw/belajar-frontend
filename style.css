@@ -28,27 +28,18 @@ button {
   font-size: 1rem;
 }
 
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-15px);
-  }
-  60% {
-    transform: translateY(-7px);
-  }
+.bounce-top {
+  display: inline-block; /* penting agar transform terlihat */
+  animation: bounce-top 1.5s ease both;
 }
 
-button:hover {
-  background-color: #005c99;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  background-color: #222;
-  color: white;
-  padding: 1rem;
-  margin-top: 2rem;
+@keyframes bounce-top {
+  0% { transform: translateY(-45px); opacity: 1; }
+  24% { opacity: 1; }
+  40% { transform: translateY(-24px); }
+  65% { transform: translateY(-12px); }
+  82% { transform: translateY(-6px); }
+  93% { transform: translateY(-4px); }
+  25%, 55%, 75%, 87% { transform: translateY(0px); }
+  100% { transform: translateY(0px); opacity: 1; }
 }
