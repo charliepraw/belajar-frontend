@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #e3f2fd;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .login-container {
+      background: white;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 320px;
+      text-align: center;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #1976d2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0d47a1;
+    }
+
+    .link {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .link a {
+      color: #1976d2;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username" />
+    <input type="password" placeholder="Password" />
+    <button>Login</button>
+    <div class="link">
+      Don't have an account? <a href="#">Sign Up</a>
+    </div>
+  </div>
+</body>
+</html>
