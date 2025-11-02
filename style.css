@@ -49,3 +49,7 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+.bounce-top {
+  -webkit-animation: bounce-top 0.9s both;
+          animation: bounce-top 0.9s both;
+}
